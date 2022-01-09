@@ -1,0 +1,16 @@
+body {
+font-family: 'open san candensed';
+padding: 20px 100px;
+}
+a{
+   text-decoration: none;
+   color: black;
+}
+   
+ *  {
+   box-sizing:border-box;
+ 
+}
+.search{
+   align-items: center;
+}

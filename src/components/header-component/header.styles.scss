@@ -1,0 +1,49 @@
+    .header {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    background-color:rgb(128, 182, 216);
+  
+    .logo{
+      height: 100%;
+      width: 100px;
+      padding: 10px 7px;
+      align-items: center;
+      display: flex
+    }
+    .home{
+      height: 100%;
+      width: 100px;
+      padding: 10px 7px;
+      align-items: center;
+      display: flex
+    }
+    .search{
+      -webkit-appearance: none;
+    border:none;
+    outline:rgb(32, 27, 27);
+    width: 700px;
+    height: 20;
+    line-height: 30px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    align-items: center;
+    margin-left: 175px;
+    }
+    
+    .options {
+      width: 50%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+  
+      .option {
+        padding: 10px 15px;
+        cursor: pointer;
+      }
+    }
+  }
+  
