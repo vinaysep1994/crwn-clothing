@@ -24,8 +24,6 @@ const mapDispatchToProps = dispatch => ({
       (accumalatedQuantity,cartItem)=>accumalatedQuantity+ cartItem.quantity,0)
   }
   );
-
-  
   export default connect(
     mapStateToProps,
     mapDispatchToProps
