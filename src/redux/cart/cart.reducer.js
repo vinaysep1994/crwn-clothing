@@ -3,7 +3,9 @@ import { addItemToCart, removeItemFromCart } from './cart.utils';
 
 const INITIAL_STATE = {
   hidden: true,
-  cartItems: []
+  cartItems: [],
+  comments: [],
+  value: ''
 };
 
 const cartReducer = (state = INITIAL_STATE, action) => {
@@ -28,6 +30,14 @@ const cartReducer = (state = INITIAL_STATE, action) => {
         ...state,
         cartItems:state.cartItems.filter(
           cartItem =>cartItem.id !== action.payload.id
+        )
+      };
+      case CartActionTypes.FILTER_ITEM:
+      return{
+        ...state,
+        value: action.payload,
+        cartItems:state.cartItems.filter(
+          cartItem =>cartItem.name.includes(action.payload)
         )
       };
     default:

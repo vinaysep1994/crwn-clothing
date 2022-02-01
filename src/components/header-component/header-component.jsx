@@ -9,7 +9,7 @@ import {createStructuredSelector} from 'reselect';
 
 import { auth } from "../../firebase/firebase.utils";
 import {ReactComponent as  Logo} from '../../assets/crown.svg';
-import { SearchBox } from "../search-box/search-box.component";
+import SearchBox from '../search-box/search-box.component';
 import { selectCartHidden } from "../../redux/cart/cart.selectors";
 import { selectCurrentUser } from "../../redux/user/user.selectors";
 
@@ -47,5 +47,4 @@ const mapStateToProbs = createStructuredSelector({
     currentUser:selectCurrentUser,
     hidden:selectCartHidden
 });
-
 export default connect(mapStateToProbs)(Header);
