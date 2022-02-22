@@ -13,7 +13,7 @@ const persistConfig = {
     whitelist: ['cart']
 }
 const rootReducer =combineReducers({
-    user : userReducer,
+    user :userReducer,
     cart :cartReducer,
     directory:directoryReducer,
     shop:shopReducer
